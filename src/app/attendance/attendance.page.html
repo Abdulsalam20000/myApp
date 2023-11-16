@@ -1,0 +1,35 @@
+<!-- src/app/attendance/attendance.page.html -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="finger-print"></ion-icon> BioAttend
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" class="ion-text-center">
+        <h1>Your Classes</h1>
+        <!--<ion-list *ngFor="let class of classes"> -->
+        <ion-list >
+          <ion-item>
+            <!--<ion-label>{{ class.courseName }}</ion-label>
+            <ion-label>{{ class.time }}</ion-label> -->
+           <!--- <ion-button color="secondary" (click)="markAttendance(class)"> -->
+            <ion-label>ITCS255</ion-label>
+            <ion-label>12:00-12:50</ion-label>  
+            <ion-button color="secondary" >
+            Mark Attendance
+            </ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
