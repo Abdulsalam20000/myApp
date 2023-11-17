@@ -1,25 +1,34 @@
-<!-- src/app/fingerprint-authentication/fingerprint-authentication.page.html -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-icon name="finger-print"></ion-icon> BioAttend
+      <ion-icon name="finger-print" class="tcolor" style="font-weight: bold;"></ion-icon>
+      <h3 style="display: inline-block; margin-left: 5px; font-weight: bold;" class="tcolor">BioAttend</h3>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-menu-button autoHide="false"></ion-menu-button>
+      <ion-menu-button autoHide="false" class="tcolor"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" style="margin-top: 50px;">
   <ion-grid>
     <ion-row>
-      <ion-col size-md="6" offset-md="3" class="ion-text-center">
-        <ion-icon name="finger-print"></ion-icon>
-        <h1>Fingerprint Authentication</h1>
-        <p>Securely authenticate using your fingerprint to access BioAttend.</p>
-        <ion-button color="secondary" expand="full" >
-          Authenticate with Fingerprint
+      <ion-col size-md="8" offset-md="2" class="ion-text-center">
+        <ion-icon name="finger-print" style="font-size: 7em; padding-top: 90px;" class="tcolor" alt="Fingerprint Icon"></ion-icon>
+        <h1 class="tcolor">Fingerprint Authentication</h1>
+        <ion-progress-bar
+          type="indeterminate"
+          style="margin-top: 20px; --ion-color-primary: darkcyan; --background: rgb(26, 219, 219)"
+          aria-label="Fingerprint Authentication In Progress"
+        ></ion-progress-bar>
+        <!--*ngIf="authenticating"-->
+        <p style="justify-content: center; color:darkcyan" aria-live="polite">Authenticating</p>
+        <p class="tcolor" aria-live="assertive">Authentication failed. Please try again.</p>
+        <ion-button class="bcolor" style="--background: darkcyan;" shape="round" expand="full" disable="false">
+          <!--(click)="authenticate()"-->
+          <p>Tap here to Mark your Attendance</p>
         </ion-button>
+        <!--*ngIf="authenticationFailed"-->
       </ion-col>
     </ion-row>
   </ion-grid>

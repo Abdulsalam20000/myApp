@@ -25,3 +25,44 @@
 #container a {
   text-decoration: none;
 }
+.bcolor
+{
+  --background: darkcyan;
+}
+.tcolor
+{
+  color:darkcyan;
+}
+.topicon
+{
+  font-weight: bold;
+  color: darkcyan;
+}
+.topname
+{
+  display: inline-block; margin-left: 5px; font-weight: bold;
+  color: darkcyan;
+}
+.welcome
+{
+  padding-top: 50px; font-weight: bold;
+  color:darkcyan
+}
+.intro
+{
+  text-align: justify; padding-top: 40px;
+}
+.login
+{
+  padding-top: 20px;
+  --background:darkcyan;
+  --ion-color-base: darkcyan; /* Set base color */
+    --ion-color-contrast: white;
+}
+.signup
+{
+  padding-top: 0px;
+  --background:darkcyan;
+  --ion-color-base: darkcyan; /* Set base color */
+    --ion-color-contrast: white;
+}
