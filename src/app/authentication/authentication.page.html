@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-icon name="finger-print" class="topicon"></ion-icon>
+      <ion-icon name="finger-print" class="topicon" ></ion-icon>
       <h3 class="topname">BioAttend</h3>
     </ion-title>
     <ion-buttons slot="end">
@@ -10,19 +10,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" style="margin-top: 50px;">
+
+<ion-content [fullscreen]="true" style="margin-top: 50px;" id="Authentication-content">
   <ion-grid>
     <ion-row>
       <ion-col size-md="8" offset-md="2" class="ion-text-center">
-        <ion-icon name="finger-print" style="font-size: 7em; padding-top: 90px;" class="tcolor" alt="Fingerprint Icon"></ion-icon>
+        <ion-icon name="finger-print" class="ficon" alt="Fingerprint Icon"></ion-icon>
         <h1 class="tcolor">Fingerprint Authentication</h1>
-        <ion-progress-bar
-          type="indeterminate"
-          style="margin-top: 20px; --ion-color-primary: darkcyan; --background: rgb(26, 219, 219)"
-          aria-label="Fingerprint Authentication In Progress"
-        ></ion-progress-bar>
+        <ion-progress-bar type="indeterminate" class="pbar"></ion-progress-bar>
         <!--*ngIf="authenticating"-->
-        <p style="justify-content: center; color:darkcyan" aria-live="polite">Authenticating</p>
+        <p class="aut">Authenticating</p>
         <p class="tcolor" aria-live="assertive">Authentication failed. Please try again.</p>
         <ion-button class="bcolor" style="--background: darkcyan;" shape="round" expand="full" disable="false">
           <!--(click)="authenticate()"-->

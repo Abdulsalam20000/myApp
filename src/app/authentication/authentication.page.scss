@@ -8,11 +8,54 @@
 }
 .topicon
 {
+ 
+  display: inline-block;
   font-weight: bold;
   color: darkcyan;
 }
 .topname
 {
-  display: inline-block; margin-left: 5px; font-weight: bold;
+  
+  display: inline-block;
+  font-weight: bold;
   color: darkcyan;
+}
+.ficon
+{
+  font-size: 7em; 
+  padding-top: 90px;
+  color:darkcyan;
+}
+.pbar
+{
+  margin-top: 20px;
+  --ion-color-primary: darkcyan; 
+  --background: rgb(195, 246, 246);
+}
+.aut
+{
+  justify-content: center; 
+  color:darkcyan
+}
+.titl
+{
+  ion-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .topicon,
+  .topname {
+    margin-top: 5px; /* Adjust the margin as needed */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .title ion-title {
+    display: block; /* Change to block for smaller screens */
+  }
+
+  .topicon,
+  .topname {
+    margin-top: 0; /* Remove the margin for smaller screens */
+  }
 }
