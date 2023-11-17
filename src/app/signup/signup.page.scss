@@ -16,10 +16,7 @@ a
     color: darkcyan; /* Set the desired color for your hyperlinks */
     text-decoration: none; /* Remove the default underline if needed */
 }
-a:hover 
-{
-    color:black; /* Set a different color for the hyperlink when hovered */
-}
+
 .custom-input {
     ion-input {
         --border-color: darkcyan; /* Set the default border color */
