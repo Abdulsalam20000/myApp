@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/class" style="color: darkcyan;"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="uprofile">
+    Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" style="padding-left: 110px;">
+        <!-- Your profile picture -->
+        <ion-avatar>
+          <img />
+          <!-- [src]="profilePicture" *ngIf="profilePicture" 
+            You can add a default image or icon if no profile picture is available -->
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <!-- Button to upload profile picture -->
+        <ion-button class="bcolor" shape="round"><!--(click)="uploadProfilePicture()"-->
+          Change Profile Picture
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <!-- Form to update user details -->
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating" style="color: darkcyan;">User ID</ion-label>
+            <ion-input  disabled></ion-input><!--[(ngModel)]="userId"-->
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" style="color: darkcyan;">Name</ion-label>
+            <ion-input ></ion-input><!--[(ngModel)]="userName"-->
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" style="color: darkcyan;">New Password</ion-label>
+            <ion-input type="password" ></ion-input><!-- [(ngModel)]="newPassword"-->
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating" style="color: darkcyan;">Old Password</ion-label>
+            <ion-input type="password"></ion-input><!-- [(ngModel)]="confirmPassword"-->
+          </ion-item>
+
+          <!-- You may want to include a confirmation password input as well -->
+
+          <ion-button expand="full" shape="round" class="bcolor" style="padding-top: 20px;">Update Profile</ion-button><!--(click)="updateProfile()"-->
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

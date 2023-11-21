@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-icon name="finger-print" class="tcolor"></ion-icon>
+      <ion-icon name="finger-print" style="color:darkcyan; font-weight: bold;"></ion-icon>
       <h3 class="topname">BioAttend</h3>
     </ion-title>
     <ion-buttons slot="end">
@@ -13,7 +13,7 @@
 <ion-menu side="end" contentId="main-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title style="color:darkcyan; text-align:center">Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -26,41 +26,44 @@
     </ion-list>
   </ion-content>
 </ion-menu>
-
 <ion-content [fullscreen]="true" class="ion-padding" id="main-content">
-  <ion-grid>
-    <ion-row>
-      <ion-col size-md="8" offset-md="2" class="ion-text-center">
-        <h1 style="color: darkcyan; font-weight: bold;">Your Classes</h1>
-        <ion-list>
-          <!-- Teacher View -->
-          <!--<ion-item *ngIf="isTeacher">--><ion-item>
-            <ion-label>Select a Class:</ion-label>
-            <ion-select >
-              <ion-select-option value="ITCS255">ITCS255 (12:00-12:50)</ion-select-option>
-              <!-- Add more class options here -->
-            </ion-select>
-            <ion-button style="--background: darkcyan;">
-              Take Attendance
-            </ion-button>
-          </ion-item>
-        </ion-list>
-          <!-- Student View
-          <ion-item *ngIf="isTeacher">-->
-        <ion-list>
-            <ion-item>
-            <ion-select>
-              <ion-select-option selected="true">ITCS101 (9:00-9:50)</ion-select-option>
-              <ion-select-option >ITCS101 (9:00-9:50)</ion-select-option>
-              <ion-select-option >ITCS101 (9:00-9:50)</ion-select-option>
-              <!-- Add more class options here -->
-            </ion-select>
-            <ion-button style="--background: darkcyan;">
-              Mark Attendance
-            </ion-button>
-          </ion-item>
-        </ion-list>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+ <!-- <ion-segment [(ngModel)]="selectedSegment">
+    <ion-segment-button value="students">
+      <ion-label class="segment">Students</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="present">
+      <ion-label class="segment">Present</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="absent">
+      <ion-label class="segment">Absent</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  
+   //Content for the "Students" segment 
+  <div *ngIf="selectedSegment === 'students' && isTeacher">
+    //Content specific to the "Students" segment 
+    <p>This is the content for the "Students" segment.</p>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button style="--background: darkcyan;"  routerLink="/create-class"> // Add a routerLink to navigate to the create class page 
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  </div>
+  
+  // Content for the "Present" segment 
+  <div *ngIf="selectedSegment === 'present' && isTeacher">
+    //Content specific to the "Present" segment 
+    <p>This is the content for the "Present" segment.</p>
+  </div>
+  
+  //Content for the "Absent" segment 
+  <div *ngIf="selectedSegment === 'absent' && isTeacher">
+    //Content specific to the "Absent" segment 
+    <ion-list>
+      <ion-item *ngFor="let student of getAbsentStudents()">
+        {{ student.name }} is absent
+      </ion-item>
+    </ion-list>
+  </div> -->
+  
 </ion-content>

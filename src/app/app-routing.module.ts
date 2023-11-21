@@ -27,6 +27,26 @@ const routes: Routes = [
     path: 'authentication',
     loadChildren: () => import('./authentication/authentication.module').then( m => m.AuthenticationPageModule)
   },
+  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'createclass',
+    loadChildren: () => import('./createclass/createclass.module').then( m => m.CreateclassPageModule)
+  },
+  {
+    path: 'class',
+    loadChildren: () => import('./class/class.module').then( m => m.ClassPageModule)
+  },
+  {
+    path: 'updateprofile',
+    loadChildren: () => import('./updateprofile/updateprofile.module').then( m => m.UpdateprofilePageModule)
+  },
+  {
+    path: 'forgotpassword',
+    loadChildren: () => import('./forgotpassword/forgotpassword.module').then( m => m.ForgotpasswordPageModule)
+  },
   
 ];
 
