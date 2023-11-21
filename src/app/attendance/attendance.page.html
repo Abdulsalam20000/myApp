@@ -1,11 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-icon name="finger-print" style="color: darkcyan;"></ion-icon>
-      <h3 style="display: inline-block; margin-left: 5px; color:darkcyan">BioAttend</h3>
+      <ion-icon name="finger-print" class="tcolor"></ion-icon>
+      <h3 class="topname">BioAttend</h3>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-menu-button autoHide="false" style="color: darkcyan;"></ion-menu-button>
+      <ion-menu-button autoHide="false" class="tcolor"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -49,10 +49,8 @@
           <ion-item *ngIf="isTeacher">-->
         <ion-list>
             <ion-item>
-            <ion-label placeholder="Choose a Class:"></ion-label>
             <ion-select>
-              <ion-title>Choose a Class</ion-title>
-              <ion-select-option >ITCS101 (9:00-9:50)</ion-select-option>
+              <ion-select-option selected="true">ITCS101 (9:00-9:50)</ion-select-option>
               <ion-select-option >ITCS101 (9:00-9:50)</ion-select-option>
               <ion-select-option >ITCS101 (9:00-9:50)</ion-select-option>
               <!-- Add more class options here -->

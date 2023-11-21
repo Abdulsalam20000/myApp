@@ -5,7 +5,7 @@
       <h3 style="display: inline-block; margin-left: 5px; font-weight: bold;" class="tcolor">BioAttend</h3>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-menu-button autoHide="false" class="tcolor"></ion-menu-button>
+      <ion-menu-button  class="tcolor" contentId="signup-content"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -13,11 +13,11 @@
 <ion-menu side="end" contentId="signup-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title class="tcolor">Menu</ion-title>
+      <ion-title class="tcolor" style="text-align: center;">Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content contentId="signup-content">
     <ion-list>
       <ion-item routerLink="/home">Home</ion-item>
       <ion-item routerLink="/signup">Sign-up</ion-item>

@@ -44,18 +44,4 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .topicon,
-  .topname {
-    margin-top: 5px; /* Adjust the margin as needed */
-  }
-}
-@media only screen and (max-width: 600px) {
-  .title ion-title {
-    display: block; /* Change to block for smaller screens */
-  }
-
-  .topicon,
-  .topname {
-    margin-top: 0; /* Remove the margin for smaller screens */
-  }
 }

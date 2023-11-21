@@ -11,19 +11,20 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="true" style="margin-top: 50px;" id="Authentication-content">
+<ion-content [fullscreen]="true" id="Authentication-content">
   <ion-grid>
     <ion-row>
       <ion-col size-md="8" offset-md="2" class="ion-text-center">
         <ion-icon name="finger-print" class="ficon" alt="Fingerprint Icon"></ion-icon>
-        <h1 class="tcolor">Fingerprint Authentication</h1>
+        <p style="color: darkcyan; font-size: x-small;">Put your finger on the scanner to authenticate.</p>
+        <p class="tcolor" style="text-align: center;">Fingerprint Authentication</p>
         <ion-progress-bar type="indeterminate" class="pbar"></ion-progress-bar>
         <!--*ngIf="authenticating"-->
         <p class="aut">Authenticating</p>
         <p class="tcolor" aria-live="assertive">Authentication failed. Please try again.</p>
-        <ion-button class="bcolor" style="--background: darkcyan;" shape="round" expand="full" disable="false">
+        <ion-button class="bcolor" style="--background: darkcyan; padding-top: 95px;" shape="round" expand="full" disable="false">
           <!--(click)="authenticate()"-->
-          <p>Tap here to Mark your Attendance</p>
+          <p>Tap to Mark your Attendance</p>
         </ion-button>
         <!--*ngIf="authenticationFailed"-->
       </ion-col>
