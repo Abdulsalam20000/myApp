@@ -47,6 +47,14 @@ const routes: Routes = [
     path: 'forgotpassword',
     loadChildren: () => import('./forgotpassword/forgotpassword.module').then( m => m.ForgotpasswordPageModule)
   },
+  {
+    path: 'regfingerprint',
+    loadChildren: () => import('./regfingerprint/regfingerprint.module').then( m => m.RegfingerprintPageModule)
+  },
+  {
+    path: 'attendprofile',
+    loadChildren: () => import('./attendprofile/attendprofile.module').then( m => m.AttendprofilePageModule)
+  },
   
 ];
 

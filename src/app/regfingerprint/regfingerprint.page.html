@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/signup" style="color: darkcyan;"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="rfinger">
+    Register Fingerprint</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row >
+      <ion-col size="12" class="ion-text-center">
+        <ion-icon name="finger-print" class="ficon"></ion-icon>
+        <p class="ion-padding" style="justify-content: center; color: darkcyan;">Place your finger on the scanner</p>
+        <p style="text-align: justify; padding-left: 5px;">
+          Follow the instructions on the screen to register your fingerprint. Ensure your finger covers the entire scanner surface.
+        </p>
+        <ion-button class="bcolor" expand="full" shape="round" style="margin-top: 20px;">
+          Start Registration
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

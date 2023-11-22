@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/class" style="color: darkcyan;"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="pattend">
+    Person Name Using NgModule</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" style="padding-left: 45%;">
+        <!-- profile picture -->
+          <img alt="User Image"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="padding-top: 50px;">
+  <ion-label position="floating" style="color: darkcyan;">UserID: NgModule Id</ion-label><!--change from label to simple p tag-->
+  <ion-grid style="padding-top: 40px;">
+    <ion-row>
+      <ion-col size="6">
+        <!-- Content on the left side -->
+        <div>
+          <p style="color: darkcyan; text-align: center;">Attended</p>
+          <p style="color: darkcyan; text-align: center;">40</p>
+        </div>
+      </ion-col>
+      <ion-col size="1" style="border-left: 1px solid #a5a2a2;"></ion-col>
+      <ion-col size="5">
+        <!-- Content on the right side -->
+        <div>
+          <p style="color: rgb(241, 52, 52); text-align: center;">Absence</p>
+          <p style="color: #fb5050; text-align: center;">10</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+  <ion-button style="--background: #fb5050; padding-top: 20px;" expand="full" shape="round">Remove Student</ion-button>
+</ion-content>
