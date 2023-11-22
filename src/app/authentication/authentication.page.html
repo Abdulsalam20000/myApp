@@ -1,8 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/class" style="color: darkcyan;"></ion-back-button>
+    </ion-buttons>
     <ion-title>
-      <ion-icon name="finger-print" class="topicon" ></ion-icon>
-      <h3 class="topname">BioAttend</h3>
+      <h3 class="authenticate">Authentication</h3>
     </ion-title>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false" class="tcolor"></ion-menu-button>
@@ -24,7 +26,7 @@
         <p class="tcolor" aria-live="assertive">Authentication failed. Please try again.</p>
         <ion-button class="bcolor" style="--background: darkcyan; padding-top: 95px;" shape="round" expand="full" disable="false">
           <!--(click)="authenticate()"-->
-          <p>Tap to Mark your Attendance</p>
+          <p>Tap to mark your Attendance</p>
         </ion-button>
         <!--*ngIf="authenticationFailed"-->
       </ion-col>

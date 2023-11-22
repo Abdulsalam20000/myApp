@@ -6,20 +6,7 @@
 {
   color:darkcyan
 }
-.topicon
-{
- 
-  display: inline-block;
-  font-weight: bold;
-  color: darkcyan;
-}
-.topname
-{
-  
-  display: inline-block;
-  font-weight: bold;
-  color: darkcyan;
-}
+
 .ficon
 {
   font-size: 7em; 
@@ -37,11 +24,10 @@
   justify-content: center; 
   color:darkcyan
 }
-.titl
+.authenticate
 {
-  ion-title {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+  margin: auto;
+  padding-left: 0px;
+  color: darkcyan;
+  font-weight: bold;
 }
